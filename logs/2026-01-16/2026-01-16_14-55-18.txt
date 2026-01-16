@@ -1,0 +1,163 @@
+2026-01-16 14:55:18 [INFO] ============================================================
+2026-01-16 14:55:18 [INFO] 机器人静态测试系统 - 日志系统启动
+2026-01-16 14:55:18 [INFO] 日志文件: C:\Users\ts\Desktop\RobotTest1\logs\2026-01-16\2026-01-16_14-55-18.txt
+2026-01-16 14:55:18 [INFO] ============================================================
+2026-01-16 14:55:28 [INFO] [车辆ID检测] SSH连接成功，开始获取HOSTNAME...
+2026-01-16 14:55:28 [INFO] [车辆ID检测] 清空初始shell提示符: Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.233 aarch64)
+2026-01-16 14:55:28 [INFO]  * Documentation:  https://help.ubuntu....
+2026-01-16 14:55:30 [INFO] [车辆ID检测] 发送命令: source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:55:30 [INFO] [车辆ID检测] 开始接收输出（超时时间5秒）...
+2026-01-16 14:55:30 [INFO] [车辆ID检测] 接收到数据: source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:55:30 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:55:30 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:55:30 [INFO] [车辆ID检测] 已获取到HOSTNAME信息，提前退出
+2026-01-16 14:55:30 [INFO] [车辆ID检测] 原始输出内容:
+2026-01-16 14:55:30 [INFO] source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:55:30 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:55:30 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:55:30 [INFO] [车辆ID检测] 警告: HOSTNAME 的值未解析: $HOSTNAME
+2026-01-16 14:55:30 [INFO] [车辆ID检测] 正则匹配失败，使用行解析方式
+2026-01-16 14:55:30 [INFO] [车辆ID检测] 输入的车辆ID: Y991A100088AK0005, 获取的HOSTNAME: None
+2026-01-16 14:55:30 [INFO] [车辆ID检测] 原始输出内容:
+2026-01-16 14:55:30 [INFO] source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:55:30 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:55:30 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:55:33 [INFO] [车辆ID检测] ❌ 无法解析HOSTNAME，原始输出长度: 155
+2026-01-16 14:55:34 [INFO] [车辆ID检测] SSH连接成功，开始获取HOSTNAME...
+2026-01-16 14:55:34 [INFO] [车辆ID检测] 清空初始shell提示符: Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.233 aarch64)
+2026-01-16 14:55:34 [INFO]  * Documentation:  https://help.ubuntu....
+2026-01-16 14:55:36 [INFO] [车辆ID检测] 发送命令: source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:55:36 [INFO] [车辆ID检测] 开始接收输出（超时时间5秒）...
+2026-01-16 14:55:36 [INFO] [车辆ID检测] 接收到数据: source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:55:36 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:55:36 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:55:36 [INFO] HOSTNAME=Y991A100088AK0005
+2026-01-16 14:55:36 [INFO] APP_VERSION=TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321
+2026-01-16 14:55:36 [INFO] robot@qcs6490-odk:~$ source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/nul
+2026-01-16 14:55:36 [INFO] ll; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:55:36 [INFO] [车辆ID检测] 已获取到HOSTNAME信息，提前退出
+2026-01-16 14:55:36 [INFO] [车辆ID检测] 原始输出内容:
+2026-01-16 14:55:36 [INFO] source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:55:36 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:55:36 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:55:36 [INFO] HOSTNAME=Y991A100088AK0005
+2026-01-16 14:55:36 [INFO] APP_VERSION=TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321
+2026-01-16 14:55:36 [INFO] robot@qcs6490-odk:~$ source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/nul
+2026-01-16 14:55:36 [INFO] ll; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:55:36 [INFO] [车辆ID检测] 警告: HOSTNAME 的值未解析: $HOSTNAME
+2026-01-16 14:55:36 [INFO] [车辆ID检测] 正则匹配失败，使用行解析方式
+2026-01-16 14:55:36 [INFO] [车辆ID检测] 行解析: HOSTNAME=Y991A100088AK0005
+2026-01-16 14:55:36 [INFO] [车辆ID检测] 输入的车辆ID: Y991A100088AK0005, 获取的HOSTNAME: Y991A100088AK0005
+2026-01-16 14:55:36 [INFO] [车辆ID检测] 原始输出内容:
+2026-01-16 14:55:36 [INFO] source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:55:36 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:55:36 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:55:36 [INFO] HOSTNAME=Y991A100088AK0005
+2026-01-16 14:55:36 [INFO] APP_VERSION=TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321
+2026-01-16 14:55:36 [INFO] robot@qcs6490-odk:~$ source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/nul
+2026-01-16 14:55:36 [INFO] ll; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:55:36 [INFO] [车辆ID检测] 比较: 车辆ID='Y991A100088AK0005' vs HOSTNAME='Y991A100088AK0005'
+2026-01-16 14:55:37 [INFO] [车辆ID检测] ✅ 匹配成功
+2026-01-16 14:55:37 [INFO] [TAB配置] 成功加载 128 个设备型号的TAB配置
+2026-01-16 14:55:37 [INFO] [TAB配置] 从CSV文件加载 X-060-V2-LV-2L2T-C-1A 的TAB配置: ['light', 'voice', 'button', 'touch', 'display', 'camera', 'lift_motor', 'rotation_motor', 'walking_motor']
+2026-01-16 14:55:39 [INFO] [系统信息调试] ✅ SSH连接成功，开始获取系统信息...
+2026-01-16 14:55:39 [INFO] [系统信息调试] 清空初始shell提示符: Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.233 aarch64)
+2026-01-16 14:55:39 [INFO]  * Documentation:  https://help.ubuntu....
+2026-01-16 14:55:41 [INFO] [系统信息调试] 发送命令: source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo PRODUCT_NAME=$PRODUCT_NAME; echo PRODUCT_NAME_EXTERNAL=$PRODUCT_NAME_EXTERNAL; echo HOSTNAME=$HOSTNAME; echo APP_VERSION=$APP_VERSION
+2026-01-16 14:55:41 [INFO] [系统信息调试] 开始接收输出（超时时间5秒）...
+2026-01-16 14:55:41 [INFO] [系统信息调试] 接收到数据: source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo PRODUCT_NAME=$PRODUCT_NAME; echo PRODUCT_NAME_EXTERNAL=$PRODUCT_NAME_EXTERNAL; echo HOSTNAME=$HOSTNAME; echo APP_VERSION=$APP_VERSION
+2026-01-16 14:55:41 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:55:41 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:55:41 [INFO] HOSTNAME=Y991A100088AK0005
+2026-01-16 14:55:41 [INFO] APP_VERSION=TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321
+2026-01-16 14:55:41 [INFO] robot@qcs6490-odk:~$ source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/nul
+2026-01-16 14:55:41 [INFO] ll; echo PRODUCT_NAME=$PRODUCT_NAME; echo PRODUCT_NAME_EXTERNAL=$PRODUCT_NAME_EXT
+2026-01-16 14:55:41 [INFO] TERNAL; echo HOSTNAME=$HOSTNAME; echo APP_VERSION=$APP_VERSION
+2026-01-16 14:55:41 [INFO] [系统信息调试] 已获取到所有需要的信息，提前退出
+2026-01-16 14:55:41 [INFO] [系统信息调试] 原始输出内容:
+2026-01-16 14:55:41 [INFO] source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo PRODUCT_NAME=$PRODUCT_NAME; echo PRODUCT_NAME_EXTERNAL=$PRODUCT_NAME_EXTERNAL; echo HOSTNAME=$HOSTNAME; echo APP_VERSION=$APP_VERSION
+2026-01-16 14:55:41 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:55:41 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:55:41 [INFO] HOSTNAME=Y991A100088AK0005
+2026-01-16 14:55:41 [INFO] APP_VERSION=TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321
+2026-01-16 14:55:41 [INFO] robot@qcs6490-odk:~$ source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/nul
+2026-01-16 14:55:41 [INFO] ll; echo PRODUCT_NAME=$PRODUCT_NAME; echo PRODUCT_NAME_EXTERNAL=$PRODUCT_NAME_EXT
+2026-01-16 14:55:41 [INFO] TERNAL; echo HOSTNAME=$HOSTNAME; echo APP_VERSION=$APP_VERSION
+2026-01-16 14:55:41 [INFO] [系统信息调试] 警告: PRODUCT_NAME 的值未解析: $PRODUCT_NAME
+2026-01-16 14:55:41 [INFO] [系统信息调试] 警告: PRODUCT_NAME_EXTERNAL 的值未解析: $PRODUCT_NAME_EXTERNAL
+2026-01-16 14:55:41 [INFO] [系统信息调试] 警告: HOSTNAME 的值未解析: $HOSTNAME
+2026-01-16 14:55:41 [INFO] [系统信息调试] 警告: APP_VERSION 的值未解析: $APP_VERSION
+2026-01-16 14:55:41 [INFO] [系统信息调试] 正则匹配不完整（只匹配到0个字段），使用行解析方式
+2026-01-16 14:55:41 [INFO] [系统信息调试] 行解析: PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:55:41 [INFO] [系统信息调试] 行解析: PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:55:41 [INFO] [系统信息调试] 行解析: HOSTNAME=Y991A100088AK0005
+2026-01-16 14:55:41 [INFO] [系统信息调试] 行解析: APP_VERSION=TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321
+2026-01-16 14:56:44 [INFO] [系统信息调试] ✅ 成功获取系统信息: {'PRODUCT_NAME': 'X-060-V2-LV-2L2T-C-1A', 'PRODUCT_NAME_EXTERNAL': 'CARRIER', 'HOSTNAME': 'Y991A100088AK0005', 'APP_VERSION': 'TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321'}
+2026-01-16 14:56:46 [INFO] [车辆ID检测] SSH连接成功，开始获取HOSTNAME...
+2026-01-16 14:56:46 [INFO] [车辆ID检测] 清空初始shell提示符: Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.233 aarch64)
+2026-01-16 14:56:46 [INFO]  * Documentation:  https://help.ubuntu....
+2026-01-16 14:56:48 [INFO] [车辆ID检测] 发送命令: source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:56:49 [INFO] [车辆ID检测] 开始接收输出（超时时间5秒）...
+2026-01-16 14:56:49 [INFO] [车辆ID检测] 接收到数据: source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:56:49 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:56:49 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:56:49 [INFO] HOSTNAME=Y991A100088AK0005
+2026-01-16 14:56:49 [INFO] APP_VERSION=TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321
+2026-01-16 14:56:49 [INFO] robot@qcs6490-odk:~$ source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/nul
+2026-01-16 14:56:49 [INFO] ll; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:56:49 [INFO] [车辆ID检测] 已获取到HOSTNAME信息，提前退出
+2026-01-16 14:56:49 [INFO] [车辆ID检测] 原始输出内容:
+2026-01-16 14:56:49 [INFO] source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:56:49 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:56:49 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:56:49 [INFO] HOSTNAME=Y991A100088AK0005
+2026-01-16 14:56:49 [INFO] APP_VERSION=TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321
+2026-01-16 14:56:49 [INFO] robot@qcs6490-odk:~$ source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/nul
+2026-01-16 14:56:49 [INFO] ll; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:56:49 [INFO] [车辆ID检测] 警告: HOSTNAME 的值未解析: $HOSTNAME
+2026-01-16 14:56:49 [INFO] [车辆ID检测] 正则匹配失败，使用行解析方式
+2026-01-16 14:56:49 [INFO] [车辆ID检测] 行解析: HOSTNAME=Y991A100088AK0005
+2026-01-16 14:56:49 [INFO] [车辆ID检测] 输入的车辆ID: Y991A100088AK0005, 获取的HOSTNAME: Y991A100088AK0005
+2026-01-16 14:56:49 [INFO] [车辆ID检测] 原始输出内容:
+2026-01-16 14:56:49 [INFO] source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:56:49 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:56:49 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:56:49 [INFO] HOSTNAME=Y991A100088AK0005
+2026-01-16 14:56:49 [INFO] APP_VERSION=TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321
+2026-01-16 14:56:49 [INFO] robot@qcs6490-odk:~$ source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/nul
+2026-01-16 14:56:49 [INFO] ll; echo HOSTNAME=$HOSTNAME
+2026-01-16 14:56:49 [INFO] [车辆ID检测] 比较: 车辆ID='Y991A100088AK0005' vs HOSTNAME='Y991A100088AK0005'
+2026-01-16 14:56:49 [INFO] [车辆ID检测] ✅ 匹配成功
+2026-01-16 14:56:50 [INFO] [TAB配置] 从CSV文件加载 X-060-V2-LV-2L2T-C-1A 的TAB配置: ['light', 'voice', 'button', 'touch', 'display', 'camera', 'lift_motor', 'rotation_motor', 'walking_motor']
+2026-01-16 14:56:51 [INFO] [系统信息调试] ✅ SSH连接成功，开始获取系统信息...
+2026-01-16 14:56:51 [INFO] [系统信息调试] 清空初始shell提示符: Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.233 aarch64)
+2026-01-16 14:56:51 [INFO]  * Documentation:  https://help.ubuntu....
+2026-01-16 14:56:53 [INFO] [系统信息调试] 发送命令: source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo PRODUCT_NAME=$PRODUCT_NAME; echo PRODUCT_NAME_EXTERNAL=$PRODUCT_NAME_EXTERNAL; echo HOSTNAME=$HOSTNAME; echo APP_VERSION=$APP_VERSION
+2026-01-16 14:56:53 [INFO] [系统信息调试] 开始接收输出（超时时间5秒）...
+2026-01-16 14:56:53 [INFO] [系统信息调试] 接收到数据: source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo PRODUCT_NAME=$PRODUCT_NAME; echo PRODUCT_NAME_EXTERNAL=$PRODUCT_NAME_EXTERNAL; echo HOSTNAME=$HOSTNAME; echo APP_VERSION=$APP_VERSION
+2026-01-16 14:56:53 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:56:53 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:56:53 [INFO] HOSTNAME=Y991A100088AK0005
+2026-01-16 14:56:53 [INFO] APP_VERSION=TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321
+2026-01-16 14:56:53 [INFO] robot@qcs6490-odk:~$ source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/nul
+2026-01-16 14:56:53 [INFO] ll; echo PRODUCT_NAME=$PRODUCT_NAME; echo PRODUCT_NAME_EXTERNAL=$PRODUCT_NAME_EXT
+2026-01-16 14:56:53 [INFO] TERNAL; echo HOSTNAME=$HOSTNAME; echo APP_VERSION=$APP_VERSION
+2026-01-16 14:56:53 [INFO] [系统信息调试] 已获取到所有需要的信息，提前退出
+2026-01-16 14:56:53 [INFO] [系统信息调试] 原始输出内容:
+2026-01-16 14:56:53 [INFO] source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/null; echo PRODUCT_NAME=$PRODUCT_NAME; echo PRODUCT_NAME_EXTERNAL=$PRODUCT_NAME_EXTERNAL; echo HOSTNAME=$HOSTNAME; echo APP_VERSION=$APP_VERSION
+2026-01-16 14:56:53 [INFO] PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:56:53 [INFO] PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:56:53 [INFO] HOSTNAME=Y991A100088AK0005
+2026-01-16 14:56:53 [INFO] APP_VERSION=TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321
+2026-01-16 14:56:53 [INFO] robot@qcs6490-odk:~$ source ~/.bashrc 2>/dev/null; source /etc/profile 2>/dev/nul
+2026-01-16 14:56:53 [INFO] ll; echo PRODUCT_NAME=$PRODUCT_NAME; echo PRODUCT_NAME_EXTERNAL=$PRODUCT_NAME_EXT
+2026-01-16 14:56:53 [INFO] TERNAL; echo HOSTNAME=$HOSTNAME; echo APP_VERSION=$APP_VERSION
+2026-01-16 14:56:53 [INFO] [系统信息调试] 警告: PRODUCT_NAME 的值未解析: $PRODUCT_NAME
+2026-01-16 14:56:53 [INFO] [系统信息调试] 警告: PRODUCT_NAME_EXTERNAL 的值未解析: $PRODUCT_NAME_EXTERNAL
+2026-01-16 14:56:53 [INFO] [系统信息调试] 警告: HOSTNAME 的值未解析: $HOSTNAME
+2026-01-16 14:56:53 [INFO] [系统信息调试] 警告: APP_VERSION 的值未解析: $APP_VERSION
+2026-01-16 14:56:53 [INFO] [系统信息调试] 正则匹配不完整（只匹配到0个字段），使用行解析方式
+2026-01-16 14:56:53 [INFO] [系统信息调试] 行解析: PRODUCT_NAME=X-060-V2-LV-2L2T-C-1A
+2026-01-16 14:56:53 [INFO] [系统信息调试] 行解析: PRODUCT_NAME_EXTERNAL=CARRIER
+2026-01-16 14:56:53 [INFO] [系统信息调试] 行解析: HOSTNAME=Y991A100088AK0005
+2026-01-16 14:56:53 [INFO] [系统信息调试] 行解析: APP_VERSION=TY_AMR_2025-main-rel-1231-V1.5.3-20251230204321

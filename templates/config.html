@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>机器人静态测试系统 - 测试配置</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='config.css') }}">
+</head>
+<body>
+    <div class="config-container">
+        <h1 class="app-title">机器人静态测试系统</h1>
+        
+        <div class="config-panel">
+            <div class="panel-header">
+                <span class="header-icon">◆</span>
+                <span class="panel-title">测试配置</span>
+            </div>
+            
+            <div class="config-form">
+                <div class="form-group">
+                    <label for="vehicleId">车辆ID</label>
+                    <input type="text" id="vehicleId" class="form-input" placeholder="请输入车辆ID" value="">
+                </div>
+                
+                <div class="form-group">
+                    <label for="vehicleIp">车辆IP地址</label>
+                    <input type="text" id="vehicleIp" class="form-input" placeholder="请输入车辆IP地址" value="">
+                </div>
+                
+                <div class="form-group">
+                    <label for="vehicleType">设备类型</label>
+                    <select id="vehicleType" class="form-select">
+                        <option value="">请选择设备类型</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="vehicleModel">车辆型号</label>
+                    <select id="vehicleModel" class="form-select" disabled>
+                        <option value="">请先选择设备类型</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-buttons">
+                <button id="startTestBtn" class="btn-primary">进入测试</button>
+                <button id="loadHistoryBtn" class="btn-secondary">加载历史配置</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 弹窗模态框 -->
+    <div id="configModal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modalTitle">提示</h3>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="modalMessage">消息内容</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-modal-confirm" id="modalConfirm">确定</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 加载提示模态框 -->
+    <div id="configLoadingModal" class="modal-overlay loading-modal">
+        <div class="modal-content loading-content">
+            <div class="loading-spinner"></div>
+            <p class="loading-message" id="loadingMessage">检测中，请稍后...</p>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='config.js') }}"></script>
+</body>
+</html>

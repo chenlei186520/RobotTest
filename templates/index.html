@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>机器人静态测试系统</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧导航栏 -->
+        <div class="sidebar">
+            <button class="back-to-config-btn" id="backToConfigBtn" title="返回测试配置面">
+                返回测试配置
+            </button>
+            <div class="nav-menu">
+                {% for category in test_categories %}
+                <button class="nav-item {% if loop.first %}active{% endif %}" 
+                        data-test-id="{{ category['id'] }}">
+                    {{ category['name'] }}
+                </button>
+                {% endfor %}
+                <!-- 测试报告TAB（固定在最后） -->
+                <button class="nav-item" data-test-id="test_report">
+                    测试报告
+                </button>
+            </div>
+            <button class="start-test-btn">开始测试</button>
+        </div>
+
+        <!-- 右侧内容区 -->
+        <div class="content-area">
+            <h1 class="main-title">机器人静态测试系统</h1>
+            <div class="test-details" id="testDetails">
+                {% if first_test_details %}
+                <div class="test-section" data-test-id="{{ first_test_id }}">
+                    {% for section in first_test_details['sections'] %}
+                    <div class="detail-section">
+                        <h3 class="section-title">{{ section['title'] }}</h3>
+                        {% for item in section['items'] %}
+                        <div class="test-item" data-item-id="{{ item['id'] }}">
+                            <!-- 按钮区域 -->
+                            <div class="button-area">
+                                {% if first_test_id == 'light' %}
+                                <!-- 灯光测试：显示按钮 -->
+                                <button class="test-button" data-item-id="{{ item['id'] }}" data-item-name="{{ item['name'] }}">{{ item['name'] }}</button>
+                                {% else %}
+                                <!-- 其他测试：显示按钮 -->
+                                <button class="test-button" data-item-id="{{ item['id'] }}" data-item-name="{{ item['name'] }}">{{ item['name'] }}</button>
+                                {% endif %}
+                            </div>
+                            <!-- 结果选项区域 -->
+                            <div class="result-area">
+                                <div class="test-result">
+                                    <label class="checkbox-label result-label">
+                                        <input type="checkbox" name="{{ item['id'] }}_result" value="normal" class="result-checkbox" disabled>
+                                        <span>正常</span>
+                                    </label>
+                                    <label class="checkbox-label result-label">
+                                        <input type="checkbox" name="{{ item['id'] }}_result" value="abnormal" class="result-checkbox" disabled>
+                                        <span>异常</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                
+                <!-- 测试报告页面 -->
+                <div class="test-section hidden" data-test-id="test_report" id="testReportSection">
+                    <div class="report-container">
+                        <h2 class="report-title">机器人静态测试报告</h2>
+                        <!-- 报告内容区域：左侧信息，下方表格 -->
+                        <div class="report-content-wrapper">
+                            <!-- 左侧：报告信息区域 -->
+                            <div class="report-info">
+                                <div class="report-info-item">
+                                    <span class="info-label">型号:</span>
+                                    <span class="info-value" id="reportModel">-</span>
+                                </div>
+                                <div class="report-info-item">
+                                    <span class="info-label">软件版本:</span>
+                                    <span class="info-value" id="reportVersion">-</span>
+                                </div>
+                                <div class="report-info-item">
+                                    <span class="info-label">设备序列号:</span>
+                                    <span class="info-value" id="reportSerialNumber">-</span>
+                                </div>
+                                <div class="report-info-item">
+                                    <span class="info-label">测试时间:</span>
+                                    <span class="info-value" id="reportTestTime">-</span>
+                                </div>
+                                <div class="report-info-item">
+                                    <span class="info-label">测试人员:</span>
+                                    <span class="info-value" id="reportTester">-</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 表格区域：标题正下方居中 -->
+                        <div class="report-table-section">
+                            <div class="report-table-wrapper">
+                                <div class="report-table-container">
+                                    <table class="report-table" id="reportTable">
+                                        <thead>
+                                            <tr>
+                                                <th>测试类别</th>
+                                                <th>测试项</th>
+                                                <th>测试结果</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="reportTableBody">
+                                            <!-- 报告数据将通过JavaScript动态填充 -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 下载按钮和云端同步按钮放在报告容器内，使用固定定位 -->
+                        <div class="report-buttons">
+                            <button class="download-btn" id="downloadReportBtn">下载报告</button>
+                            <button class="cloud-sync-btn" id="cloudSyncBtn">云端同步</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 水印 -->
+    <div class="watermark">ThunderSoft Confidential</div>
+
+    <!-- 自定义弹窗 -->
+    <div id="customModal" class="custom-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-title" id="modalTitle">提示</div>
+            <div class="modal-message" id="modalMessage"></div>
+            <div class="modal-link-container" id="modalLinkContainer" style="display: none;">
+                <a href="#" target="_blank" id="modalLink" class="modal-link">
+                    <span class="modal-link-text">查看云端文件</span>
+                    <span class="modal-link-icon">→</span>
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn" id="modalConfirmBtn">确定</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 选择结果弹窗 -->
+    <div id="selectResultModal" class="custom-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-title" id="selectResultTitle">请选择测试结果</div>
+            <div class="modal-message" id="selectResultMessage"></div>
+            <div class="modal-select-options">
+                <label class="select-option-label">
+                    <input type="radio" name="testResult" value="normal" class="select-option-radio">
+                    <span>正常</span>
+                </label>
+                <label class="select-option-label">
+                    <input type="radio" name="testResult" value="abnormal" class="select-option-radio">
+                    <span>异常</span>
+                </label>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn" id="selectResultConfirmBtn">确定</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
