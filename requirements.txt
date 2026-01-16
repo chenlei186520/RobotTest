@@ -1,0 +1,16 @@
+# Web框架
+Flask==3.0.0
+Werkzeug==3.0.1
+
+# SSH连接库（用于远程执行命令）
+# 注意：paramiko会自动安装其依赖（cryptography、bcrypt等）
+paramiko==3.4.0
+
+# HTTP请求库（用于语音测试接口调用和飞书云上传）
+requests>=2.31.0
+
+# HTTP请求工具库（用于飞书云文件上传的MultipartEncoder）
+requests-toolbelt>=1.0.0
+
+# Excel文件处理（用于生成测试报告）
+openpyxl==3.1.2
